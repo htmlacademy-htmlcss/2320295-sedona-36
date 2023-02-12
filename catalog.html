@@ -56,7 +56,7 @@
         <section class="filter">
             <form class="catalog_filter" action="https:echo.htmlacademy.ru/" method="get">
                 <div class="filter_list">
-                    <fieldset class="filters_group">
+                    <fieldset class="filter_group">
                         <legend class="filter_title">Инфраструктура:</legend>
                         <ul class="catalog_list">
                             <li class="catalog_item">
@@ -103,8 +103,15 @@
                         </ul>
                     </fieldset>
                     <fieldset class="filter_group">
-
+                      <legend class="filter_title">Стоимость, Р:</legend>
+                      <input type="number" value="0" max="100" min="0">
+                      <input type="number" value="9000" max="10000" min="0">
+                      <input type="range" max="100" min="0">
                     </fieldset>
+                    <div class="filter_btn">
+                      <button class="filter_button light-button" type="submit">Применить</button>
+                      <button class="filter_button_cancel" type="reset">Сбросить</button>
+                    </div>
                 </div>
             </form>
         </section>
