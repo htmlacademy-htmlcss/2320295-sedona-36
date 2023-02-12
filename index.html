@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
-  </body>
+    <Link rel="stylesheet" href="style.css">
+ </head>
+<body>
+   <div class="container">
+      <header class="header-page">
+         <nav class="header-page_nav">
+            <img class="header-page_logo" src="img/logo.svg" width="138" height="70" alt="Логотип">
+            <ul class="header-page_list">
+               <li class="header-page_item">
+                  <a class="header-page_link header-page_link-active" href="index.html">Главная</a>
+               </li>
+               <li class="header-page_item">
+                  <a class="header-page_link" href="#">О Седоне</a>
+               </li>
+               <li class="header-page_item">
+                  <a class="header-page_link" href="catalog.html">Гостиницы</a>
+               </li>
+            </ul>
+            <ul class="header-page_list">
+               <li class="header-page_item">
+                  <a class="header-page_link header-page_link-search" href="#">
+                     <span class="visually-hidden">Поиск</span>
+                  </a>
+               </li>
+               <li class="header-page_item">
+                  <a class="header-page_link header-page_link-favorites" href="index.html">
+                     <span class="visually-hidden">Избранное</span>
+                     <span class="header-page_number">12</span>
+                  </a>
+               </li>
+               <li class="header-page_item">
+                  <a class="header-page_link header-page_btn button" href="#">Хочу сюда!</a>
+               </li>
+            </ul>
+         </nav> 
+      </header> 
+      <main>    
+         <h1>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h1>
+         <p>Рассмотрим причины, по которым Седона круче чем Гранд-Каньон!</p>
+         <ul class="features-list">
+            <li class="features-item">НАСТОЯЩИЙ ГОРОДОК</li>
+            <img src="img/photo-1.jpg" width="800" height="385">
+            <li class="features-item features-item-square">НЕБОЛЬШАЯ ПЛОЩАДЬ</li>
+            <li class="features-item features-item-road">КРАСИВАЯ ДОРОГА</li>    
+            <li class="features-item features-item-tourist">МАЛО ТУРИСТОВ</li>
+            <img src="img/photo-2.jpg" width="800" height="385">
+            <li class="features-item">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</li>
+         </ul>
+         <h2>ПРИЕЗЖАЙТЕ В СЕДОНУ ОТДОХНУТЬ В КОМФОРТЕ И УЮТЕ</h2>
+          <p>Опытный персонал и качестенное обслуживание!</p>
+          <ul class="features-list">
+            <li class="features-item features-item-house">Жилье</li>
+            <li class="features-item features-item-food">Еда</li>
+            <li class="features-item features-item-souvenir">Сувениры</li>
+            </ul>
+      </main>
+      <footer class="page-footer">
+         <div class="subscribe subscribe_bg">
+            <h2 class="subscribe_title title-main">Подпишитесь на рассылку</h2>
+            <p class="subscribe_text"> Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form action class="subscribe_form">
+               <input class="subscribe_input" type="email" placeholder="Ваш e-mail" size="30" required>
+               <button class="subscribe_btn light-button" type="submit">Подписаться</button>
+            </form>
+         </div>
+         <div class="social">
+            <ul class="social_list">
+               <li class="social_item">
+                  <a class="social_link-vk" href="https://vk.com/htmlacademy">
+                     <span class="visually-hidden">Мы в Вконтакте</span>
+                  </a>
+               </li>
+               <li class="social_item">
+                  <a class="social_link-telegram" href="https://web.telegram.org/k/#@hrmlacademy">
+                     <span class="visually-hidden">Мы в Телеграм</span>
+                  </a>
+               </li>
+               <li class="social_item">
+                  <a class="social_link-youtube" href="https://www.youtube.com/@HTMLAcademyRUS">
+                     <span class="visually-hidden">Мы в Ютубе</span>
+                  </a>
+               </li>
+            </ul>
+            <a class="social_number" href="tel:88128121212">+7 (812) 812-12-12</a>
+            <a href="https://htmlacademy.ru/study" class="social_link-logo">
+               <img class="social_link-logo" src="img/Logo2.svg" width="115" height="34" alt="Логотип">
+            </a>
+         </div>
+      </footer>
+   </div>
+</body>
 </html>
