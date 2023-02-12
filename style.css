@@ -21,8 +21,8 @@ ul {
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     padding-inline-start: 40px;
 }
 
@@ -39,8 +39,8 @@ p {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
 }
 
 li {
@@ -49,14 +49,14 @@ li {
 }
 
 
-button { 
+button {
     text-rendering: auto;
     color: white;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
     text-transform: none;
-    text-indent: 0px;
+    text-indent: 0;
     text-shadow: none;
     display: inline-block;
     text-align: center;
@@ -64,7 +64,7 @@ button {
     cursor: default;
     box-sizing: border-box;
     background-color: #82B3D3;
-    margin: 0em;
+    margin: 0;
     padding: 1px 6px;
     border-width: 2px;
     border-style: outset;
@@ -101,7 +101,7 @@ header {
     align-items: center;
 }
 
-.header-page_list:first-of-type, 
+.header-page_list:first-of-type,
 .header-page_item:not(:last-child) {
     margin-right: 32px;
 }
@@ -125,13 +125,13 @@ header {
     margin-left: 33px;
 }
 
-.header-page_list:last-of-type, 
+.header-page_list:last-of-type,
 .header-page_item:first-child {
     margin-right: 26px;
 }
 
-.header-page_list:last-of-type, 
-.header-page_item:nth-child(2), 
+.header-page_list:last-of-type,
+.header-page_item:nth-child(2),
 .header-page_link {
     position: relative;
 }
@@ -167,8 +167,8 @@ h2 {
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
     font-weight: bold;
 }
 
@@ -181,7 +181,7 @@ h2 {
 }
 
 .header-page_list:last-of-type,
-.header-page_item:nth-child(2), 
+.header-page_item:nth-child(2),
 .header-page_link {
     position: relative;
 }
@@ -243,26 +243,25 @@ footer {
 
 form {
     display: block;
-    margin-top: 0em;
+    margin-top: 0;
 }
 
 input {
-    writing-mode: horizontal-tb !important;
+    writing-mode: horizontal-tb;
     text-rendering: auto;
     color: fieldtext;
     letter-spacing: normal;
     word-spacing: normal;
     line-height: normal;
     text-transform: none;
-    text-indent: 0px;
+    text-indent: 0;
     text-shadow: none;
     display: inline-block;
     text-align: start;
     appearance: auto;
-    -webkit-rtl-ordering: logical;
     cursor: text;
     background-color: field;
-    margin: 0em;
+    margin: 0;
     padding: 1px 2px;
     border-width: 2px;
     border-style: inset;
@@ -345,4 +344,3 @@ a:-webkit-any-link {
     text-decoration: none;
     color: #000000;
 }
-
