@@ -197,36 +197,86 @@ h2 {
     position: relative;
 }
 
-
-.features-list {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    margin: 150px;
-    padding: 0;
+.promo_text {
+  width: 620px;
+  margin: 0 auto;
 }
 
-.features-item {
-    width: 400px;
-    height: 385px;
-    text-align: justify;
-    background-color: #82B3D3;
-    color: white;
+.title-main {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.features-item-tourist,
-.features-item-square,
-.features-item-food {
-    background-color: rgba(131, 179, 211, 0.12);
-    color: black;
+.promo_subtext {
+  width: 655px;
+  margin: 0 auto;
 }
 
-.features-item-road,
-.features-item-house,
-.features-item-souvenir {
-    background-color: rgba(131, 179, 211, 0.2);
-    color: black;
+.advantages {
+  text-align: center;
+}
+
+.advantages_list {
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages_image {
+  display: block;
+}
+
+.advantages_item:nth-child(2) {
+  width: 800px;
+}
+
+.advantages-item {
+  width: 400px;
+  min-height: 385px;
+}
+
+.advantages-item:first-child,
+.advantages-item:last-child {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(5) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(4) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+  width: 230px;
+}
+
+.box-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.box-subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
 }
 
 .visually-hidden {
