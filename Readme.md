@@ -1,13 +1,14 @@
 # Личный проект «Седона»
 
 * Студент: [Nikita Trubin](https://up.htmlacademy.ru/htmlcss/36/user/2320295).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/id983299).
 
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
+https://up.htmlacademy.ru/htmlcss/36/user/983299
 ---
 
 ### Памятка
