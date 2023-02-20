@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nikita Trubin](https://up.htmlacademy.ru/htmlcss/36/user/2320295).
-* Наставник: [Дмитрий Железцов] (https://up.htmlacademy.ru/profession/frontender/16/htmlcss/36/user/983299).
+* Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/id983299).
 
 ---
 
