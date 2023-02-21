@@ -224,8 +224,8 @@ html {
   padding: 69px 254px;
 }
 
-.advantages__headdescription,
-.advantages__comedescription {
+.advantages__head-description,
+.advantages__come-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -235,7 +235,7 @@ html {
   padding: 0;
 }
 
-.advantages__headdescription {
+.advantages__head-description {
   margin-top: 25px;
 }
 
@@ -381,12 +381,12 @@ html {
 }
 
 /* Mailing Block */
-.newsletter {
+.news-letter {
   text-align: center;
   padding: 96px 258px 104px 258px;
 }
 
-.newsletter-main {
+.news-letter-main {
   background-color: #000000;
   color: #ffffff;
   background-image: url("../images/subscribe-index-background.jpg");
@@ -394,11 +394,11 @@ html {
   background-size: cover;
 }
 
-.newsletter__title {
+.news-letter__title {
   margin-bottom: 20px;
 }
 
-.newsletter__text {
+.news-letter__text {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -409,15 +409,15 @@ html {
   max-width: 475px;
 }
 
-.newsletter-inner .newsletter__text {
+.news-letter-inner .news-letter__text {
   color: #333333;
 }
 
-.newsletter__form {
+.news-letter__form {
   display: flex;
 }
 
-.newsletter__field {
+.news-letter__field {
   font-family: "PT Sans", Arial, sans-serif;
   min-width: 452px;
   background-color: #f2f2f2;
@@ -429,7 +429,7 @@ html {
   padding: 12px 20px;
 }
 
-.newsletter__button {
+.news-letter__button {
   font-size: 20px;
   line-height: 36px;
   display: inline-block;
