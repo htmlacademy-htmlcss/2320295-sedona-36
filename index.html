@@ -91,7 +91,7 @@
               <p class="advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
-            <li class="advantages__item lightgray-box">
+            <li class="advantages__item light-gray-box">
               <h3 class="advantages__title title-little">Мало туристов</h3>
               <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там
               </p>
@@ -121,7 +121,7 @@
 
           <!--home, eat, souvenirs-->
           <ul class="advantages__sublist">
-            <li class="advantages__subitem lightgray-box">
+            <li class="advantages__subitem light-gray-box">
               <!-- логотип домик -->
               <span class="advantages__subicon advantages__home-icon"></span>
               <h3 class="advantages__subtitle title-little">Жильё</h3>
@@ -137,7 +137,7 @@
                 разочаруетесь!
               </p>
             </li>
-            <li class="advantages__subitem lightgray-box">
+            <li class="advantages__subitem light-gray-box">
               <!-- логотип подарок -->
               <span class="advantages__subicon advantages__gift-icon"></span>
               <h3 class="advantages__subtitle title-little">Сувениры</h3>
@@ -152,24 +152,84 @@
         <section class="hotel-search">
           <h2 class="hotel-search__title title-big">Заинтересовались?</h2>
           <p class="hotel-search__text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
-            гостиниц
-            в Седоне
+            гостиниц в Седоне
           </p>
-          <a class="hotel-search__button button--brown" href="https://echo.htmlacademy.ru/">поиск гостиницы в седоне
-          </a>
+          <a id="popup-open" href="#" class="button-brown search-hotel-button">Поиск гостиницы в Седоне</a>
         </section>
 
+        <!-- Popup :) -->
+        <section id="popup" class="hotel-search-popup">
+          <div class="popup-container">
+            <form class="popup-form" action="https://echo.htmlacademy.ru/" method="get">
+              <button id="popup-close" class="popup-close">&#10006</button>
+              <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
+              <label class="popup-date-label">
+                <span class="popup-label-text">Дата заезда:</span>
+                <input type="text" id="firstDate" class="popup-first-date" placeholder="27 апреля 2023" name="arrive-date">
+                <span class="date-state" id="firstDateState"></span>
+              </label>
+              <label class="popup-date-label">
+                <span class="popup-label-text">Дата выезда:</span>
+                <input type="text" id="secondDate" class="popup-second-date" placeholder="1 сентября 2023" name="departure-date">
+                <span class="date-state" id="secondDateState"></span>
+              </label>
+              <div class="popup-people-container">
+                <label for="#adult-count" class="popup-adults-label-text">Взрослые:</label>
+                <div class="popup-people-count">
+                  <button id="adult-minus" class="math-mark popup-minus" type="button">
+                    <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                  <input id="adult-count" type="number" class="people-count-field adult-input" value="2" min="0" max="10" name="adult-count">
+                  <button id="adult-plus" class="math-mark popup-plus" type="button">
+                    <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
+                <span id="adult-count-state" class="count-state">Лимит достигнут.</span>
+              </div>
+              <div class="popup-people-container">
+                <label for="#child-count" class="popup-children-label-text">Дети:</label>
+                <div class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                    i
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-children">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                  </span>
+                </div>
+                <div class="popup-people-count">
+                  <button id="child-minus" class="math-mark popup-minus" type="button">
+                    <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                  <input id="child-count" type="number" class="people-count-field child-input" value="2" min="0" max="10" name="child-count">
+                  <button id="child-plus" class="math-mark popup-plus" type="button">
+                    <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                    </svg>
+                  </button>
+                </div>
+                <span id="child-count-state" class="count-state">Лимит достигнут.</span>
+              </div>
+              <button class="popup-find-button button-blue" id="popup-submit-botton" type="submit" value="submit">Найти</button>
+            </form>
+          </div>
+        </section>
+
+        <script src="scripts/index.js"></script>
+
         <!-- Mailing Block -->
-        <section class="news-letter newsletter-main">
+        <section class="news-letter news-letter-main">
           <h2 class="news-letter__title title-big">Подпишитесь на рассылку</h2>
           <p class="news-letter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="news-letter__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              почта
-              <input class="news-letter__field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
-                id="newsletter-email" required>
-            </label>
-            <button class="newsletter__button button--blue" type="submit">Подписаться</button>
+            <input class="news-letter__field" type="email" placeholder="Ваш e-mail" name="news-letter-email"
+              id="news-letter-email" required>
+            <button class="news-letter__button button--blue" type="submit">Подписаться</button>
           </form>
         </section>
       </main>

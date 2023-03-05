@@ -85,8 +85,8 @@
                   </li>
                   <li class="catalog-filter__item">
                     <label class="catalog-filter__checkbox-label">
-                      <input class="catalog-filter__checkbox-input" type="checkbox" name="Wi-Fi">
-                      интернет
+                      <input class="catalog-filter__checkbox-input" type="checkbox" name="Internet">
+                      Wi-Fi
                     </label>
                   </li>
                 </ul>
@@ -138,7 +138,7 @@
                 <!-- Range -->
                 <div class="catalog-filter__range">
                   <label>
-                    диапазон
+                    Цена
                     <input type="range" class="catalog-filter__range-input">
                   </label>
                 </div>
@@ -290,11 +290,9 @@
           <h2 class="news-letter__title title-big">Подпишитесь на рассылку</h2>
           <p class="news-letter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="news-letter__form" action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              почта
-              <input class="news-letter__field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
-                id="news-letter-email" required>
-            </label>
+            <label class="visually-hidden" for="newsletter-email">почта</label>
+            <input class="news-letter__field" type="email" placeholder="Ваш e-mail" name="newsletter-email"
+              id="news-letter-email" required>
             <button class="news-letter__button button--blue" type="submit">Подписаться</button>
           </form>
         </section>
