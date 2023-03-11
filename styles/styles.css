@@ -20,13 +20,17 @@ html {
 
 body {
   height: 100%;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
   margin: 0;
   color: #000000;
   background-color: #f2f2f2;
+}
+
+p {
+  font-family: "PT Sans";
 }
 
 .page-container {
@@ -345,13 +349,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-
-/* .advantages-list__image-item {
-  display: inline-block;
-  width: 800px;
-  min-height: 385px;
-  padding: 0;
-} */
 
 .advantages-list__image {
   grid-column: 2 span;
@@ -1409,17 +1406,6 @@ display: block;
   margin: 0;
   list-style: none;
 }
-
-/* .hotels-cards__item {
-  display: grid;
-  grid-template-columns: repeat(2, calc((100% - 20px) / 2));
-  grid-template-rows: repeat(4, min-content);
-  gap: 16px 20px;
-  padding: 20px;
-  box-shadow: 0 0 0 1px #e6e6e6;
-  box-sizing: border-box;
-  border-radius: 4px;
-} */
 
 .hotels-cards__item {
   display: flex;

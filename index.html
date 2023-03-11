@@ -9,8 +9,8 @@
   </head>
   <body>
     <div class="page-container">
-      <!-- Header -->
-      <header class="page-header">
+       <!-- Header -->
+       <header class="page-header">
         <nav class="navigation">
             <a href="index.html" class="navigation-logo__link">
               <svg width="140" height="70" viewBox="0 0 140 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,39 +32,41 @@
                   </defs>
                 </svg>
             </a>
+            <!-- Flex-wrap & width  -->
             <ul class="navigation-links">
-                <li class="navigation-links__item"><a href="#" class="navigation-links__link navigation-links__link-current">Главная</a></li>
-                <li class="navigation-links__item"><a href="#about-sedona" class="navigation-links__link">О Седоне</a></li>
-                <li class="navigation-links__item"><a href="catalog.html" class="navigation-links__link">Гостиницы</a></li>
+              <li class="navigation-links__item"><a href="#" class="navigation-links__link navigation-links__link-current">Главная</a></li>
+              <li class="navigation-links__item"><a href="#about-sedona" class="navigation-links__link">О Седоне</a></li>
+              <li class="navigation-links__item"><a href="catalog.html" class="navigation-links__link">Гостиницы</a></li>
             </ul>
             <ul class="navigation-clickable-links">
-              <li class="clickable-links__item">
-                <a href="#" class="clickable-links__link">
-                  <span class="visually-hidden">Поиск.</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19" fill="currentColor">
-                    <path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7
-                    3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
-                  </svg>
-                </a>
-              </li>
-              <li class="clickable-links__item">
-                <a href="#" class="clickable-links__link">
-                    <span class="visually-hidden">Избранные</span>
-                    <span id="favCount" class="nav__favorites-count">12</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17" fill="currentColor">
-                        <path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0
-                        8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9
-                        14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3
-                        0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
-                    </svg>
-                </a>
-              </li>
-              <li class="clickable-links__item">
-                <a href="catalog.html" class="button-brown clickable-links__button">Хочу сюда!</a>
-              </li>
+                <!-- win-width & min-heigth  -->
+                <li class="clickable-links__item">
+                    <a href="#" class="clickable-links__link">
+                        <span class="visually-hidden">Поиск</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" width="19" height="19" fill="currentColor">
+                            <path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7
+                            3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clickable-links__item">
+                    <a href="#" class="clickable-links__link">
+                        <span class="visually-hidden">Избранные</span>
+                        <span id="favCount" class="nav__favorites-count">12</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17" fill="currentColor">
+                            <path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0
+                            8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9
+                            14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3
+                            0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="clickable-links__item">
+                    <a href="#" class="button-brown clickable-links__button">Хочу сюда!</a>
+                </li>
             </ul>
         </nav>
-      </header>
+    </header>
 
       <!-- Main -->
       <!-- Main paddings -->
@@ -74,7 +76,7 @@
         <section class="main-hero">
           <h1 class="visually-hidden">Городок Седона.</h1>
           <!-- display: block  -->
-          <img class="welcome-image" src="images/index-header/welcome.svg" alt="Добро пожаловать в Седону." width="456.7" height="351.37">
+          <img class="welcome-image" src="images/index-header/welcome.svg" alt="Добро пожаловать в Седону." width="456" height="351">
           <div class="hero-Nikitas-triangles">
           </div>
         </section>
@@ -88,48 +90,48 @@
           <p class="slogan-wrapper-desc">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
-          <dl class="advantages-list">
+          <div class="advantages-list">
             <div class="advantages-list__wrapper">
               <div class="advantages-list__item">
-                <dt class="advantages-list__item-title">Настоящий городок</dt>
-                <dd class="advantages-list__item-desc">
+                <h3 class="advantages-list__item-title">Настоящий городок</h3>
+                <p class="advantages-list__item-desc">
                   Седона — не аттракцион для туристов, там течёт своя жизнь
-                </dd>
+                </p>
               </div>
               <img class="advantages-list__image" src="images/advanteges-photos/photo-1.jpg" alt="Городской пейзаж Седоны." width="800" height="385">
             </div>
             <div class="advantages-list__item">
-              <dt class="advantages-list__item-title">Небольшая
-                площадь</dt>
-              <dd class="advantages-list__item-desc">
+              <h3 class="advantages-list__item-title">Небольшая
+                площадь</h3>
+              <p class="advantages-list__item-desc">
                 Все достопримечательности находятся очень близко
-              </dd>
+              </p>
             </div>
             <div class="advantages-list__item">
-              <dt class="advantages-list__item-title">Красивая
-                дорога</dt>
-              <dd class="advantages-list__item-desc">
+              <h3 class="advantages-list__item-title">Красивая
+                дорога</h3>
+              <p class="advantages-list__item-desc">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </dd>
+              </p>
             </div>
             <div class="advantages-list__item">
-              <dt class="advantages-list__item-title">Мало
-                туристов</dt>
-              <dd class="advantages-list__item-desc">
+              <h3 class="advantages-list__item-title">Мало
+                туристов</h3>
+              <p class="advantages-list__item-desc">
                 Большинство едет в Гранд Каньон и толпится там
-              </dd>
+              </p>
             </div>
             <div class="advantages-list__wrapper">
               <img class="advantages-list__image" src="images/advanteges-photos/photo-2.jpg" alt="Мост дьявола в Седоне." width="800" height="385">
               <div class="advantages-list__item">
-                <dt class="advantages-list__item-title">Там есть
-                  мост дьявола</dt>
-                <dd class="advantages-list__item-desc">
+                <h3 class="advantages-list__item-title">Там есть
+                  мост дьявола</h3>
+                <p class="advantages-list__item-desc">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                </dd>
+                </p>
               </div>
             </div>
-          </dl>
+          </div>
         </section>
 
         <section class="benefits">
@@ -172,7 +174,7 @@
         <section id="popup" class="hotel-search-popup">
           <div class="popup-container">
             <form class="popup-form" action="https://echo.htmlacademy.ru/" method="get">
-              <button id="popup-close" class="popup-close">&#10006</button>
+              <button id="popup-close" class="popup-close">&#10006;</button>
               <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
               <label class="popup-date-label">
                 <span class="popup-label-text">Дата заезда:</span>
@@ -185,13 +187,14 @@
                 <span class="date-state" id="secondDateState"></span>
               </label>
               <div class="popup-people-container">
-                <label for="#adult-count" class="popup-adults-label-text">Взрослые:</label>
+                <label for="adult-count" class="popup-adults-label-text">Взрослые:</label>
                 <div class="popup-people-count">
                   <button id="adult-minus" class="math-mark popup-minus" type="button">
                     <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
                   </button>
+                  <label for="adult-count" class="visually-hidden">Добавляем количество</label>
                   <input id="adult-count" type="number" class="people-count-field adult-input" value="2" min="0" max="10" name="adult-count">
                   <button id="adult-plus" class="math-mark popup-plus" type="button">
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,7 +205,7 @@
                 <span id="adult-count-state" class="count-state">Лимит достигнут.</span>
               </div>
               <div class="popup-people-container">
-                <label for="#child-count" class="popup-children-label-text">Дети:</label>
+                <label for="child-count" class="popup-children-label-text">Дети:</label>
                 <div class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
                     i
@@ -217,6 +220,7 @@
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
                   </button>
+                  <label for="child-count" class="visually-hidden">количество детей</label>
                   <input id="child-count" type="number" class="people-count-field child-input" value="2" min="0" max="10" name="child-count">
                   <button id="child-plus" class="math-mark popup-plus" type="button">
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,7 +235,7 @@
           </div>
         </section>
 
-        <script src="index.js"></script>
+        <script src="js/index.js"></script>
 
         <!-- Newsletter subscription -->
         <article class="email-subscription main-email-subscription">
@@ -240,8 +244,9 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" class="field" placeholder="Ваш e-mail" name="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-            <button class="button-blue newsletter-button"type="submit">Подписаться</button>
+            <label for="email-sub" class="visually-hidden">почта</label>
+            <input id="email-sub" type="email" class="field" placeholder="Ваш e-mail" name="newsletter-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+            <button class="button-blue newsletter-button" type="submit">Подписаться</button>
           </form>
         </article>
       </main>
@@ -286,7 +291,8 @@
             +7 (812) 812-12-12
         </a>
         <a class="footer-copyright" href="https://htmlacademy.ru/">
-            <svg class="footer-copyright-img" xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none" alt="HTML Academy." viewBox="0 0 115 34">
+            <span class="visually-hidden">Логотип HTML-академии.</span>
+            <svg class="footer-copyright-img" xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none" viewBox="0 0 115 34">
                 <path fill="#000" d="M0 13.26v2.6h2.5v-2.6H0ZM11.6
                 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6
                 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5
