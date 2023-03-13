@@ -53,7 +53,7 @@
               <a href="#" class="clickable-links__link">
                 <span class="visually-hidden">Избранные</span>
                 <span id="favCount" class="nav__favorites-count">12</span>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="17" fill="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 17" width="18" height="20" fill="currentColor">
                   <path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0
                             8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5L9
                             14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3
@@ -62,7 +62,7 @@
               </a>
             </li>
             <li class="clickable-links__item">
-              <a href="#" class="button-brown clickable-links__button">Хочу сюда!</a>
+              <button class="button-brown clickable-links__button" id="header-popup-open" type="button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -75,8 +75,7 @@
         <!-- Hero -->
         <section class="main-hero">
           <h1 class="visually-hidden">Городок Седона.</h1>
-          <!-- display: block  -->
-          <img class="welcome-image" src="images/index-header/welcome.svg" alt="Добро пожаловать в Седону." width="456" height="351">
+          <img class="welcome-image" src="images/index-header/welcome.svg" alt="Добро пожаловать в Седону." width="458" height="352">
         </section>
 
         <!-- Advantages -->
@@ -85,7 +84,7 @@
           <h2 class="slogan-wrapper-headline">
             Седона — небольшой городок в Аризоне, заслуживающий большего!
           </h2>
-          <p class="slogan-wrapper-desc">
+          <p class="slogan-wrapper-desc item-sedona">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
           <div class="advantages-list">
@@ -101,27 +100,27 @@
             <div class="advantages-list__item">
               <h3 class="advantages-list__item-title">Небольшая
                 площадь</h3>
-              <p class="advantages-list__item-desc">
+              <p class="advantages-list__item-desc item-sedona">
                 Все достопримечательности находятся очень близко
               </p>
             </div>
             <div class="advantages-list__item">
               <h3 class="advantages-list__item-title">Красивая дорога</h3>
-              <p class="advantages-list__item-desc">
+              <p class="advantages-list__item-desc item-sedona">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </div>
             <div class="advantages-list__item">
               <h3 class="advantages-list__item-title">Мало
                 туристов</h3>
-              <p class="advantages-list__item-desc">
+              <p class="advantages-list__item-desc item-sedona">
                 Большинство едет в Гранд Каньон и толпится там
               </p>
             </div>
             <div class="advantages-list__wrapper">
               <img class="advantages-list__image" src="images/advanteges-photos/photo-2.jpg" alt="Мост дьявола в Седоне." width="800" height="385">
               <div class="advantages-list__item">
-                <h3 class="advantages-list__item-title">Там есть
+                <h3 class="advantages-list__item-title">Там есть <br>
                   мост дьявола</h3>
                 <p class="advantages-list__item-desc">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
@@ -133,26 +132,26 @@
 
         <section class="benefits">
           <h2 class="slogan-wrapper-headline">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <p class="slogan-wrapper-desc">
+          <p class="slogan-wrapper-desc item-sedona">
             Опытный персонал и качественное обслуживание!
           </p>
           <dl class="benefits-list">
             <div class="advantages-list__item">
               <dt class="advantages-list__item-title">Жильё</dt>
-              <dd class="advantages-list__item-desc">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              <dd class="advantages-list__item-desc item-sedona">
+                Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
               </dd>
             </div>
             <div class="advantages-list__item">
               <dt class="advantages-list__item-title">Еда</dt>
-              <dd class="advantages-list__item-desc">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              <dd class="advantages-list__item-desc item-sedona">
+                Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!
               </dd>
             </div>
             <div class="advantages-list__item">
               <dt class="advantages-list__item-title">Сувениры</dt>
-              <dd class="advantages-list__item-desc">
-                Не только китайского, но и настоящего местного производства!
+              <dd class="advantages-list__item-desc item-sedona">
+                Не только китайского,<br> но и настоящего местного<br>  производства!
               </dd>
             </div>
           </dl>
@@ -161,7 +160,7 @@
         <!-- Hotel search -->
         <section class="slogan-wrapper hotel-search">
           <h2 class="slogan-wrapper-headline">Заинтересовались?</h2>
-          <p class="slogan-wrapper-desc">
+          <p class="slogan-wrapper-desc item-sedona">
             Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <a id="popup-open" href="#" class="button-brown search-hotel-button">Поиск гостиницы в Седоне</a>
@@ -169,31 +168,36 @@
 
         <!-- Popup :) -->
         <section id="popup" class="hotel-search-popup">
+          <h2 class="visually-hidden">Форма поиска гостиниц</h2>
           <div class="popup-container">
             <form class="popup-form" action="https://echo.htmlacademy.ru/" method="get">
-              <button id="popup-close" type="button" class="popup-close">&#10006;</button>
+              <button id="popup-close" class="popup-close" type="button">
+                <span class="visually-hidden">Закрыть всплывающее окно</span>
+                &#10006;
+              </button>
               <h2 class="popup-title">Поиск гостиницы в Седоне</h2>
               <label class="popup-date-label">
                 <span class="popup-label-text">Дата заезда:</span>
-                <input type="text" id="firstDate" class="popup-first-date" placeholder="27 апреля 2023" name="arrive-date" required>
+                <input type="text" id="firstDate" class="popup-first-date" placeholder="Укажите дату" name="arrive-date" value="27 апреля 2020">
                 <span class="date-state" id="firstDateState"></span>
               </label>
               <label class="popup-date-label">
                 <span class="popup-label-text">Дата выезда:</span>
-                <input type="text" id="secondDate" class="popup-second-date" placeholder="1 сентября 2023" name="departure-date" required>
+                <input type="text" id="secondDate" class="popup-second-date" placeholder="Укажите дату" name="departure-date" value="1 сентября 2023">
                 <span class="date-state" id="secondDateState"></span>
               </label>
               <div class="popup-people-container">
                 <label for="adult-count" class="popup-adults-label-text">Взрослые:</label>
                 <div class="popup-people-count">
                   <button id="adult-minus" class="math-mark popup-minus" type="button">
-                    <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                    <span class="visually-hidden">На одного взрослого меньше</span>
+                    <svg class="minus-svg" width="14" height="14" viewBox="0 0 14 2" fill="#756157" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0L0 2L14 2V0L0 0Z" fill-opacity="0.3"/>
                     </svg>
                   </button>
-                  <label for="adult-count" class="visually-hidden">Добавляем количество</label>
                   <input id="adult-count" type="number" class="people-count-field adult-input" value="2" min="0" max="10" name="adult-count">
                   <button id="adult-plus" class="math-mark popup-plus" type="button">
+                    <span class="visually-hidden">На одного взрослого больше</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
@@ -205,6 +209,7 @@
                 <label for="child-count" class="popup-children-label-text">Дети:</label>
                 <div class="tooltip">
                   <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-children">
+                    <span class="visually-hidden">Дополнительная информация по количеству детей</span>
                     i
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-children">
@@ -213,13 +218,14 @@
                 </div>
                 <div class="popup-people-count">
                   <button id="child-minus" class="math-mark popup-minus" type="button">
-                    <svg class="minus-svg" width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <span class="visually-hidden">На одного ребенка меньше</span>
+                    <svg class="minus-svg" width="14" height="14" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
                       <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
                   </button>
-                  <label for="child-count" class="visually-hidden">количество детей</label>
                   <input id="child-count" type="number" class="people-count-field child-input" value="2" min="0" max="10" name="child-count">
                   <button id="child-plus" class="math-mark popup-plus" type="button">
+                    <span class="visually-hidden">На одного ребенка больше</span>
                     <svg class="plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                     </svg>
@@ -231,8 +237,6 @@
             </form>
           </div>
         </section>
-
-        <script src="js/index.js"></script>
 
         <!-- Newsletter subscription -->
         <article class="email-subscription main-email-subscription">
@@ -310,6 +314,6 @@
         </a>
       </footer>
     </div>
-
+    <script src="script/index.js"></script>
   </body>
 </html>
