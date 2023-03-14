@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  min-width: 100%;
+  min-width: 1200px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -160,6 +160,26 @@ body {
   margin-top: 25px;
   font-size: 22px;
   line-height: 26px;
+}
+
+.slogan-wrapper-headline-main {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0 270px;
+}
+
+.slogan-wrapper-desc-main {
+  margin-top: 0;
+  margin-bottom: 90px;
+  padding: 0 270px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 
@@ -305,7 +325,7 @@ body {
   color: #ffffff;
   background: url("../images/index-header/index-header-bg.jpg") no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-color: #cacaca;
 }
 
 .main-hero::after {
@@ -896,6 +916,7 @@ display: block;
 .main-email-subscription {
   color: #ffffff;
   background: url("../images/blur-photos/newsletter-bg.jpg") no-repeat;
+  background-color: #82B3D3;
   background-size: auto;
   object-fit: cover;
 }
@@ -1057,7 +1078,7 @@ display: block;
   padding: 35px 70px 70px;
   text-align: left;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82B3D3;
   background: url("../images/blur-photos/catalog-header-bg.jpg") no-repeat;
   background-size: cover;
 }
