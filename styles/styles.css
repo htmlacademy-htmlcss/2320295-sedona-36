@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  min-width: 100%;
+  min-width: 1200px;
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -160,6 +160,26 @@ body {
   margin-top: 25px;
   font-size: 22px;
   line-height: 26px;
+}
+
+.slogan-wrapper-headline-main {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding: 0 270px;
+}
+
+.slogan-wrapper-desc-main {
+  margin-top: 0;
+  margin-bottom: 90px;
+  padding: 0 270px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
 }
 
 
@@ -305,7 +325,7 @@ body {
   color: #ffffff;
   background: url("../images/index-header/index-header-bg.jpg") no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-color: #cacaca;
 }
 
 .main-hero::after {
@@ -896,6 +916,7 @@ display: block;
 .main-email-subscription {
   color: #ffffff;
   background: url("../images/blur-photos/newsletter-bg.jpg") no-repeat;
+  background-color: #82B3D3;
   background-size: auto;
   object-fit: cover;
 }
@@ -1057,7 +1078,7 @@ display: block;
   padding: 35px 70px 70px;
   text-align: left;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #82B3D3;
   background: url("../images/blur-photos/catalog-header-bg.jpg") no-repeat;
   background-size: cover;
 }
@@ -1232,16 +1253,37 @@ display: block;
 /* Секция цены */
 
 .catalog-price-range {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .range-wrapper-inputs {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 41px;
+}
+
+.range-label {
+  position: relative;
+}
+
+.range-label span {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 20px;
+  color: #AAAAAA;
 }
 
 .range-wrapper-inputs input {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
   width: 143px;
   height: 48px;
   padding: 12px 20px;
@@ -1251,59 +1293,52 @@ display: block;
   font-size: 18px;
   line-height: 24px;
   border: none;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.range-wrapper-inputs input[type=number]::-webkit-inner-spin-button,
-.range-wrapper-inputs input[type=number]::-webkit-outer-spin-button {
+.range-wrapper-inputs input:hover {
+  opacity: 0.9;
+}
+
+.range-wrapper-inputs input:focus {
+  outline: 3px solid #83B3D3;
+  z-index: 3;
+}
+
+.range-wrapper-inputs input[type="number"]::-webkit-inner-spin-button,
+.range-wrapper-inputs input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  -moz-appearance: textfield;
   -webkit-appearance: none;
   margin: 0;
 }
 
-.range-from__field {
+.range-label:first-child .range-field {
   margin-right: 2px;
   border-radius: 4px 0 0 4px;
 }
 
-.range-to__field {
+.range-label:last-child .range-field {
   border-radius: 0 4px 4px 0;
-}
-
-.range-from__field__text,
-.range-to__field__text {
-  position: absolute;
-  content: "от";
-  top: 50%;
-  left: 106px;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 24px;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 24px;
-  color: #AAAAAA;
-}
-
-.range-to__field__text {
-  left: 248px;
 }
 
 .range-scale {
   position: relative;
-  min-height: 20px;
+  min-height: 4px;
   width: 285px;
-  /* height: 20px; */
+  margin-bottom: 11px;
 }
 
 .range-scale input[type="range"] {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   height: 4px;
   width: 285px;
   position: absolute;
   background-color: #5E676C;
   pointer-events: none;
-  /* border: 2px solid #C6C6C6; */
 }
 
 .range-scale input[type=range]::-webkit-slider-thumb {
@@ -1313,6 +1348,7 @@ display: block;
   height: 20px;
   background-color: #fff;
   border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 1px #C6C6C6;
   box-shadow: 0 0 0 1px #C6C6C6;
   cursor: pointer;
 }
@@ -1337,7 +1373,7 @@ display: block;
   -webkit-box-shadow: inset 0 0 3px #387bbe, 0 0 9px #387bbe;
 }
 
-.range-scale__from_t {
+#range-scale__from {
   height: 0;
   top: 2px;
   z-index: 1;
